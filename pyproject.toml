@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fanboxget"
+version = "0.1.0"
+description = "Download pictures from fanbox"
+authors = ["zombie110year <zombie110year@outlook.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+fanboxget = "fanboxget.cli:main"
